@@ -1,0 +1,60 @@
+body,
+html,
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.source-sans-3 {
+    font-family: "Source Sans 3", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+  #gallery-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
+    margin: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid;
+    border-radius: 50px;
+    width: 1000px;
+}
+
+.parent{
+
+}
+
+.gallery{
+    display: flex;
+    width: 75%;
+
+
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    border: solid;
+    border-radius: 50rem;
+}
+
+.card-header{
+
+}
+
+.card-desc{
+
+}
+
+.card-image{
+    width: auto;
+    height: auto;
+}
