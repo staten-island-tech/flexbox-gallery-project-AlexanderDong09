@@ -1,7 +1,7 @@
 body,
 html,
 * {
-    font-size: 10px;
+    font-size: 62.5%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,44 +17,63 @@ html,
 
   #gallery-title{
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     font-family: "Oswald", sans-serif;
     text-decoration: underline;
-    margin: 50px;
+    margin: 5rem;
     margin-right: auto;
     margin-left: auto;
     border: solid;
     border-radius: 50px;
-    width: 1000px;
-}
-
-.parent{
 
 }
+
+/* .parent{
+    display: flex;
+    border: solid;
+    justify-content: space-around;
+    height: 100rem;
+   
+} */
 
 .gallery{
     display: flex;
-    width: 75%;
-
+    width: 80%;
+    height: 100rem;
+    margin: 5rem;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
 
 }
 
+
 .card{
-    width: 20rem;
+    width: 30rem;
     height: 30rem;
     border: solid;
-    border-radius: 50rem;
+    border-radius: 50px;
+    margin: 2rem;
+    padding: 2rem;
+
 }
 
 .card-header{
-
-}
-
-.card-desc{
-
+text-align: center;
+font-size: 3rem;
+padding-bottom: 1rem;
 }
 
 .card-image{
-    width: auto;
-    height: auto;
+    height: 75%;    
 }
+
+.card-desc{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+
+    }
+    
