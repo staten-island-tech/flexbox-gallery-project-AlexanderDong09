@@ -78,25 +78,36 @@ color: white;
 .card-image{
     height: 100%;  
     transition: all 0.3s ease-in-out; 
+    border-radius: 50px;
 }
 
 a{
     height: 75%;
     display: flex;
     justify-content: center;
+    border-radius: 50px;
 }
 
-.card:hover .card-image {
+ .card:hover .card-image {
     transform: scale(1.05);  /* Expand the image when the card is hovered, synced */
 }
 
 .card:hover{
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
-.num2:hover .card-image {
-    animation: 
+.num2{
+    transition: all 0.3s ; 
 }
+
 .num2:hover{
-    transform: scale(1.4);
+    transform: rotate(-0.005turn)
+}
+
+.num3{
+    transition:all 0.3s;
+}
+
+.num3:hover{
+    transform: rotate(0.005turn);
 }
