@@ -88,20 +88,22 @@ a{
     border-radius: 50px;
 }
 
- .card:hover .card-image {
+.card:hover .card-image {
     transform: scale(1.05);  /* Expand the image when the card is hovered, synced */
+    
 }
 
 .card:hover{
     transform: scale(1.2);
 }
 
-.num2{
+.num1{
     transition: all 0.3s ; 
 }
 
-.num2:hover{
-    transform: rotate(-0.005turn)
+.num1:hover{
+    transform: rotate(0.01turn) translate(0rem,-2rem);
+
 }
 
 .num3{
@@ -109,5 +111,22 @@ a{
 }
 
 .num3:hover{
-    transform: rotate(0.005turn);
+    transform: rotate(-0.01turn) translate(0rem,-2rem);
+}
+
+.num5 {
+    transition: transform 0.3s ease;
+}
+
+.num5:hover {
+    transform: skew(2deg, 2deg);
+}
+
+
+.num7{
+    transition: box-shadow 0.3s ease;
+}
+
+.num7:hover {
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.3);
 }
