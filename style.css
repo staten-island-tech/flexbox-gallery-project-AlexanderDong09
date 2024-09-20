@@ -68,34 +68,53 @@ body {
     transition: all 0.3s ease-in-out; 
     background: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
     color: white;
-
-
+    box-shadow: 2px 3px 6px white;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .card-header{
 text-align: center;
+text-anchor: start;
 font-size: 3rem;
-padding-bottom: 1rem;
 color: white;
+padding-bottom: 1rem;
 justify-content: center;
 }
 
 .card-image{
-    height: 100%;  
+    max-height: 275px;
+    max-width: 275px;
     transition: all 0.3s ease-in-out; 
     border-radius: 50px;
+    object-fit: contain;
+
+  
 }
 
 a{
-    height: 75%;
-    display: flex;
+    max-height: 275px;
+    max-width: 275px;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
     justify-content: center;
     border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+
+}
+a:hover{
+    color: rgb(74, 104, 241);
+    background-color: transparent;
+    text-decoration: underline;
 }
 
+
+
 .card:hover .card-image {
-    transform: scale(1.05);  /* Expand the image when the card is hovered, synced */
-    
+    transform: scale(1.075);  /* Expand the image when the card is hovered, synced */
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover{
@@ -116,7 +135,28 @@ a{
 }
 
 .num3:hover{
-    transform: perspective(17px);
+    animation: wobble ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes wobble {
+  0% {
+  }
+  20% {
+    transform: translateY(1px);
+  }
+  40% {
+    transform: translateY(-1px);
+  }
+  60% {
+    transform: translateY(1px);
+  }
+  80% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
 }
 
 .num5 {
