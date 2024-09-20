@@ -10,7 +10,7 @@ html,
 
 body {
     background-image: url(backg.png) ;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     
@@ -137,50 +137,60 @@ a:hover{
 .num3:hover{
     animation: wobble ease-in-out;
     animation-duration: 1s;
+    
 }
 
-@keyframes wobble {
-  0% {
-  }
-  20% {
-    transform: translateY(1px);
-  }
-  40% {
-    transform: translateY(-1px);
-  }
-  60% {
-    transform: translateY(1px);
-  }
-  80% {
-    transform: translateY(-1px);
-  }
-  100% {
-    transform: translateY(1px);
-  }
-}
+
 
 .num5 {
     transition: transform 0.3s ease;
 }
 
 .num5:hover {
-    transform: skew(2deg, 2deg);
+    transform: skew(10deg, 2deg);
+    
 }
 
 
 .num7 {
-    transition: transform 0.3 ease;
+    transition: all 0.3;
 }
 
 .num7:hover {
-    transform: translate(0rem,-2rem);
+    animation: jump ease-in-out;
+    animation-duration: 1s;
 }
+
+@keyframe jump{
+    0% {
+    }
+    20% {
+      transform: translateX(1px);
+    }
+    40% {
+      transform: translateX(-1px);
+    }
+    60% {
+      transform: translateX(1px);
+    }
+    80% {
+      transform: translateX(-1px);
+    }
+    100% {
+      transform: translateX(1px); 
+  
+    }
+}
+
 
 .num9 {
     transition: 0.3 ease;
 }
 
 .num9:hover {
-    transform: matrix(2, 1, 1, 1, 0, 0);
+    transform: matrix(1, .2, 1, 1, 0, 0);
 }
 
+@media screen and (max-width: ) {
+    
+}
