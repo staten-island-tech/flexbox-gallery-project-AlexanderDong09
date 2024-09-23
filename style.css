@@ -9,7 +9,7 @@ html,
 }
 
 body {
-    background-image: url(backg.png) ;
+    background-image: url(images/backg.png) ;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -57,8 +57,8 @@ body {
 
 
 .card{
-    width: 36rem;
-    height: 36rem;
+    width: 30rem;
+    height: 30rem;
     border: solid;
     border-radius: 50px;
     margin: 4rem;
@@ -84,8 +84,8 @@ justify-content: center;
 }
 
 .card-image{
-    max-height: 275px;
-    max-width: 275px;
+    max-height: 225px;
+    max-width: 225px;
     transition: all 0.3s ease-in-out; 
     border-radius: 50px;
     object-fit: contain;
@@ -161,23 +161,23 @@ a:hover{
     animation-duration: 1s;
 }
 
-@keyframe jump{
+@keyframes jump{
     0% {
     }
     20% {
-      transform: translateX(1px);
+      transform: translateY(10%);
     }
     40% {
-      transform: translateX(-1px);
+      transform: translateY(-10%);
     }
     60% {
-      transform: translateX(1px);
+      transform: translateY(10%);
     }
     80% {
-      transform: translateX(-1px);
+      transform: translateY(-10%);
     }
     100% {
-      transform: translateX(1px); 
+      transform: translateY(10%); 
   
     }
 }
@@ -191,6 +191,3 @@ a:hover{
     transform: matrix(1, .2, 1, 1, 0, 0);
 }
 
-@media screen and (max-width: ) {
-    
-}
