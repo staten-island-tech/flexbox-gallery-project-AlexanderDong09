@@ -9,7 +9,7 @@ html,
 }
 
 body {
-    background-image: url(backg.png) ;
+    background-image: url(images/backg.png) ;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -44,7 +44,8 @@ body {
 
 
 .card{
-    width: 25%;
+    width: 30rem;
+    height: 30rem;
     border: solid;
     border-radius: 50px;
     margin: 4rem;
@@ -72,8 +73,8 @@ justify-content: center;
 }
 
 .card-image{
-    max-height: 275px;
-    max-width: 275px;
+    max-height: 225px;
+    max-width: 225px;
     transition: all 0.3s ease-in-out; 
     border-radius: 50px;
     object-fit: contain;
@@ -160,6 +161,39 @@ a:hover{
 .num5:hover {
     transform: skew(10deg, 2deg);
 }
+
+
+.num7 {
+    transition: all 0.3;
+}
+
+.num7:hover {
+    animation: jump ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes jump{
+    0% {
+    }
+    20% {
+      transform: translateY(10%);
+    }
+    40% {
+      transform: translateY(-10%);
+    }
+    60% {
+      transform: translateY(10%);
+    }
+    80% {
+      transform: translateY(-10%);
+    }
+    100% {
+      transform: translateY(10%); 
+  
+    }
+}
+
+
 .num9 {
     transition: 0.3 ease;
 }
