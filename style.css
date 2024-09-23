@@ -13,9 +13,7 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
-    
-  }
-
+    }
 
 .source-sans-3 {
     font-family: "Source Sans 3", system-ui;
@@ -24,7 +22,6 @@ body {
     font-style: normal;
   }
   
-
 .gallery-title{
     text-align: center;
     font-size: 4rem;
@@ -36,41 +33,32 @@ body {
     margin-left: auto;
     border: solid;
     border-radius: 50px;
-    background: radial-gradient(circle, rgba(42,24,166,0.3799719716988358) 0%, rgba(68,4,94,1) 100%); 
-
+    background: radial-gradient(circle, rgba(42,24,166,0.3) 0%, rgba(68,4,94,1) 100%); 
 }
-
-
 
 .gallery{
     display: flex;
-    width: 90%;
-
-    margin: 5rem;
-    justify-content: space-around;
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;
-
+    justify-content: space-around;
 }
 
 
 .card{
-    width: 36rem;
-    height: 36rem;
+    width: 25%;
     border: solid;
     border-radius: 50px;
     margin: 4rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
     transition: all 0.3s ease-in-out; 
     background: radial-gradient(circle, rgba(109,94,209,0.35) 0%, rgba(35,42,83,1) 100%);
     color: white;
     box-shadow: 2px 3px 6px white;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -89,8 +77,6 @@ justify-content: center;
     transition: all 0.3s ease-in-out; 
     border-radius: 50px;
     object-fit: contain;
-
-  
 }
 
 a{
@@ -100,7 +86,7 @@ a{
     color: white;
     text-decoration: none;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 100px;
     transition: all 0.5s ease-in-out;
 
 }
@@ -110,87 +96,73 @@ a:hover{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1250px) {
+    .card{
+    width: 25%; 
+    height: auto;  
+    margin: 2rem;  
+    padding: 2rem;  
+    }
+    .card-image{
+        border-radius: 25px;
+        width: 100%;
+    }
+    .gallery{
+        flex-direction: row;
+    }   
+}
 
+@media screen and (max-width: 800px) {
+    .card{
+    width: 90%; 
+    height: auto;  
+    margin: 2rem auto;  
+    padding: 2rem;  
+   
+    }
+    .card-image{
+        border-radius: 25px;
+        width: 100%;
+
+    }
+    .gallery{
+        justify-content: center;
+        flex-direction: column;
+    }
+    a{
+        font-size: 2.5rem;
+    }  
+}
 
 .card:hover .card-image {
     transform: scale(1.075);  /* Expand the image when the card is hovered, synced */
     transition: all 0.3s ease-in-out;
 }
-
 .card:hover{
     transform: scale(1.2);
 }
-
 .num1{
     transition: all 0.3s ; 
 }
-
 .num1:hover{
     transform: rotate(0.01turn) translate(0rem,-2rem);
-
 }
-
 .num3{
     transition:all 0.3s;
 }
-
 .num3:hover{
     animation: wobble ease-in-out;
-    animation-duration: 1s;
-    
+    animation-duration: 1s;    
 }
-
-
-
 .num5 {
     transition: transform 0.3s ease;
 }
-
 .num5:hover {
     transform: skew(10deg, 2deg);
-    
 }
-
-
-.num7 {
-    transition: all 0.3;
-}
-
-.num7:hover {
-    animation: jump ease-in-out;
-    animation-duration: 1s;
-}
-
-@keyframe jump{
-    0% {
-    }
-    20% {
-      transform: translateX(1px);
-    }
-    40% {
-      transform: translateX(-1px);
-    }
-    60% {
-      transform: translateX(1px);
-    }
-    80% {
-      transform: translateX(-1px);
-    }
-    100% {
-      transform: translateX(1px); 
-  
-    }
-}
-
-
 .num9 {
     transition: 0.3 ease;
 }
-
 .num9:hover {
     transform: matrix(1, .2, 1, 1, 0, 0);
-}
-
-@media screen and (max-width: ) {
-    
 }
