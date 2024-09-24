@@ -44,8 +44,8 @@ body {
 
 
 .card{
-    width: 30rem;
-    height: 30rem;
+    width: 32rem;
+    height: 32rem;
     border: solid;
     border-radius: 50px;
     margin: 4rem;
@@ -97,7 +97,7 @@ a:hover{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen (max-width: 1250px) and (orientation: landscape) {
     .card{
     width: 25%; 
     height: auto;  
@@ -113,7 +113,9 @@ a:hover{
     }   
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen (max-width: 1200px) and (min-width: 800px) {
     .card{
     width: 90%; 
     height: auto;  
@@ -142,30 +144,21 @@ a:hover{
 .card:hover{
     transform: scale(1.2);
 }
-.num1{
-    transition: all 0.3s ; 
-}
+
 .num1:hover{
     transform: rotate(0.01turn) translate(0rem,-2rem);
 }
-.num3{
-    transition:all 0.3s;
-}
+
 .num3:hover{
     animation: wobble ease-in-out;
     animation-duration: 1s;    
 }
-.num5 {
-    transition: transform 0.3s ease;
-}
+
 .num5:hover {
     transform: skew(10deg, 2deg);
 }
 
 
-.num7 {
-    transition: all 0.3;
-}
 
 .num7:hover {
     animation: jump ease-in-out;
@@ -194,9 +187,17 @@ a:hover{
 }
 
 
-.num9 {
-    transition: 0.3 ease;
-}
 .num9:hover {
     transform: matrix(1, .2, 1, 1, 0, 0);
+}
+
+.num11 {
+    transition: 1s ease;
+    transform-origin: center;
+}
+.num11:hover{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(10);
 }
